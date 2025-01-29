@@ -1,0 +1,9 @@
+name: test
+on: push
+jobs:
+  job:
+    runs-on: unbuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: gcc mandelbrot.c
+      - run: sudo apt-get install texlive gnuplot-nox
