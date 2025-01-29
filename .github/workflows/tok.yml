@@ -10,5 +10,5 @@ jobs:
       - run: gnuplot plot.gpi
       - run: pdflatex art.tex
       - uses: actions/upload-artifact@v4
-      with
-        path: art.pdf
+        with:
+          path: art.pdf
