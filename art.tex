@@ -1,5 +1,33 @@
 \documentclass{article}
-\usepackage{graphicx,listings,xcolor}
-\begin {document}
-\include graphics{plot.pdf}
+\usepackage{graphicx, listings, xcolor}
+\usepackage[a4paper, margin=1cm]{geometry}
+\definecolor{bgcolor}{rgb}{0.9,0.95,1.0}
 
+ \lstset{
+    basicstyle=\ttfamily,
+    backgroundcolor=\color{bgcolor},
+    commentstyle=\color{green},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{teal},
+    stringstyle=\color{blue}
+}
+
+\begin{document}
+
+ \title{Mandelbrot projekt}
+ \author{Anna Stawiarska}
+ \maketitle
+ 
+ \tableofcontents
+ \newpage
+ 
+ \section{kod C}
+ \lstinputlisting[language=C]{mandelbrot.c}
+ 
+ \section{kod Gnuplot}
+ \lstinputlisting[language=gnuplot]{plot.gpi}
+ 
+ \section{Wykres}
+ \includegraphics[width=\textwidth]{plot.pdf}
+
+\end{document}
