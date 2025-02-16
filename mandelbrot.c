@@ -22,6 +22,6 @@ int main(int argc,char*argv[]){
             double y =ymin+j*((ymax-ymin)/6400.);
             complex c = x+y*I;
             if(in_set (c,20))
-                printf("%g\t%tg\n",x,y);
+                printf("%g\t%g\n",x,y);
         }
 }
